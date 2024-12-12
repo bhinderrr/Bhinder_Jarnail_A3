@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #D7CEC7, #76323F);
+            color: black;
+        }
+
+        nav {
+            background-color: #76323f;
+            width: 120px;
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            padding-top: 10px;
+            text-align: center;
+            z-index: 10;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 15px 0;
+        }
+
+        nav ul li a {
+            color: #D7CEC7;
+            font-size: 16px;
+            display: block;
+            padding: 10px;
+        }
+
+        nav ul li a:hover,
+        nav ul li a:active {
+            background-color: #D7CEC7;
+            color: black;
+            border-radius: 5px;
+        }
+
+        .main-content {
+            padding: 20px;
+            width: 90%;
+            margin-right: 140px;
+        }
+
+        .hobbies-text {
+            margin-top: 15px;
+        }
+
+        header h1 {
+            text-align: center;
+            color: black;
+        }
+
+        #contact {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+        }
+
+        section {
+            padding: 50px 20px;
+            border-bottom: 1px solid #D7CEC7;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        section h2 {
+            color: rgb(0, 0, 0);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about-container {
+            display: grid;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .about-text {
+            text-align: left;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+        }
+
+        .about-image {
+            display: flex;
+            justify-content: center;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #D7CEC7;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 91%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid #000000;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: left;
+            color: black;
+        }
+
+        a:link,
+        a:visited {
+            color: #D7CEC7;
+        }
+
+        a:hover,
+        a:active {
+            color: #76323F;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            margin-right: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sidebar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>Welcome to My Personal Website</h1>
+        </header>
+
+        <!-- About Me -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>Hey, I'm Jarnail Bhinder! I'm super into tech, design, and just discovering new things.
+                        Whether it’s coding, graphic design, or gaming, I always enjoy learning about different stuff.
+                        I love diving into new challenges and seeing how I can solve problems in creative ways.
+                        When I’m not working on projects, you’ll probably find me reading books, exploring nature, or
+                        just hanging out with friends. I enjoy spending time outdoors, whether it’s a walk in the park
+                        or a weekend hike.
+                        I'm always trying to push myself to learn new things and improve on what I already know.
+                        I think it’s important to always be curious and keep growing.
+                        I’m really excited to see where all my interests and hard work will take me in the future,
+                        and I’m looking forward to the new experiences and opportunities that are coming my way!
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="pic of me.jpg" alt="A photo of me" width="300" height="400">
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies -->
+        <section id="hobbies">
+            <div class="about-text">
+                <h2>Hobbies</h2>
+                <ul>
+                    <li class="hobbies-text">Photography: One of my favorite hobbies to do is random photography. I find
+                        it very relaxing and
+                        it helps bring ease to my mind.
+                        Whenever I find myself stressed or overstimulated from classes, photography helps me cool down
+                        and relax from it all.</li>
+                    <li class="hobbies-text">Playing video-games: Playing video-games is a fun way to escape into
+                        different worlds and challenge myself.
+                        Plus, it's a great way to relax and bond with friends over something we all enjoy.</li>
+                    <li class="hobbies-text">Reading the Percy Jackson Series: Growing up and watching the movies, I
+                        always found greek
+                        mythology interesting. The Percy Jackson books, helped me learn a litte more about the myths
+                        themselves and enjoy a
+                        great fantasy novel based on the myths. </li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="image 6.jpg" alt="Photography" width="350" height="350">
+                <img src="image 7.jpg" alt="Photography" width="350" height="350">
+                <img src="image 8.jpg" alt="Photography" width="350" height="350">
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio">
+            <div class="about-text">
+                <h2>Portfolio</h2>
+                <p>Here are a few projects I've worked on:</p>
+
+                <!-- Table -->
+                <table>
+                    <tr>
+                        <th>Project</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>ReLocate</td>
+                        <td>An app me and some other designers created, ReLocate is a mobile app designed to help
+                            users easily find and book recreational facilities for various activities, such as sports
+                            and fitness
+                            sessions. It allows users to search for nearby centers, filter results based on preferences
+                            like activity
+                            type or availability, and view important details like schedules, facilities, and amenities.
+                            ReLocate also provides
+                            notifications and updates about activities, helping users stay informed and organized for
+                            their recreational
+                            plans. You can explore the prototype of ReLocate by following this <a
+                                href="https://embed.figma.com/proto/dM868LhNHAKPPWSkFejWtO/M3?node-id=79-3674&starting-point-node-id=79%3A3787&embed-host=share"
+                                target="_blank">link to the Figma prototype</a>.</td>
+                    </tr>
+                    <tr>
+                        <td>Personal Website</td>
+                        <td>Another project I worked on was with my brother, where we created him a website/portfolio
+                            for
+                            him. During that project I helped him with, he helped me learn other elements of HTML and
+                            CSS that
+                            weren't mentioned in this class, which only added to my knowledge of the language. You can
+                            look at his work as well on <a href="https://github.com/bhinder97" target="_blank">his
+                                GitHub profile</a>.</td>
+                    </tr>
+                </table>
+                <img src="image 1.png" alt="Portfolio example" width="300" height="200">
+                <img src="image 2.png" alt="Portfolio example" width="300" height="200">
+                <img src="image 3.png" alt="Portfolio example" width="300" height="200">
+                <img src="image 4.png" alt="Portfolio example" width="200" height="300">
+                <img src="image 5.png" alt="Portfolio example" width="200" height="300">
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="about-text">
+                    <p>Feel free to reach out to me via email: <a
+                            href="mailto:youremail@example.com">jsbhinde@uwaterloo.ca</a></p>
+                    <p>You can also check out my other work on my <a href="https://github.com/bhinderrr"
+                            target="_blank">GitHub</a>.</p>
+                </div>
+                <div>
+                    <img src="https://media.giphy.com/media/SIrnn4wzzawvWLHUzb/giphy.gif" alt="GIF" width="380"
+                        height="380">
+                    <p><a href="https://giphy.com/gifs/SPTV-classic-tv-the-jeffersons-norman-lear-SIrnn4wzzawvWLHUzb">via
+                            GIPHY</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; Created By Yours Truly. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
